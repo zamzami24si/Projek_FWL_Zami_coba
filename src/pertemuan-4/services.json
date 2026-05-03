@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Cloud Hosting Pro",
+    "category": "Service",
+    "description": "High-performance cloud hosting for scalable applications.",
+    "price": 150000,
+    "image": "/Img/foto1a.jpg",
+    "details": {
+      "provider": { "name": "DigitalOcean", "location": "Singapore", "tier": "Enterprise" },
+      "specifications": { "cpu": "4 Cores", "ram": "8GB", "storage": "160GB NVMe" },
+      "warranty": { "period": "1 Year", "type": "SLA 99.9%", "support": "24/7 Priority" }
+    },
+    "tags": ["Cloud", "Server", "Hosting", "Scalable"]
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard K3",
+    "category": "Gear",
+    "description": "Ultra-slim wireless mechanical keyboard with RGB.",
+    "price": 1200000,
+    "image": "/Img/foto2a.jpg",
+    "details": {
+      "provider": { "name": "Keychron", "location": "China", "tier": "Premium" },
+      "specifications": { "switch": "Gateron Brown", "battery": "4000mAh", "layout": "75%" },
+      "warranty": { "period": "12 Months", "type": "Limited", "support": "Email Support" }
+    },
+    "tags": ["Hardware", "Keyboard", "Wireless", "RGB"]
+  },
+  {
+    "id": 3,
+    "name": "Cyber Security Audit",
+    "category": "Service",
+    "description": "Professional penetration testing for web and mobile apps.",
+    "price": 5000000,
+    "image": "/Img/foto3.jpg",
+    "details": {
+      "provider": { "name": "HackShield", "location": "Jakarta", "tier": "Government Grade" },
+      "specifications": { "scope": "Full System", "duration": "2 Weeks", "tools": "Metasploit, Burp" },
+      "warranty": { "period": "6 Months", "type": "Post-Fix Guarantee", "support": "Direct WA" }
+    },
+    "tags": ["Security", "Service", "Audit", "Cyber"]
+  },
+  {
+    "id": 4,
+    "name": "Monitor Ultrawide 34\"",
+    "category": "Gear",
+    "description": "Immersive productivity with 144Hz curved display.",
+    "price": 6500000,
+    "image": "/Img/foto4.jpg",
+    "details": {
+      "provider": { "name": "Xiaomi", "location": "China", "tier": "Consumer" },
+      "specifications": { "panel": "VA Curved", "refresh": "144Hz", "resolution": "WQHD" },
+      "warranty": { "period": "3 Years", "type": "Panel Warranty", "support": "Service Center" }
+    },
+    "tags": ["Hardware", "Monitor", "Office"]
+  },
+  {
+    "id": 5,
+    "name": "UI/UX Design Subscription",
+    "category": "Service",
+    "description": "Monthly design service for your startup product.",
+    "price": 3500000,
+    "image": "/Img/foto5.jpg",
+    "details": {
+      "provider": { "name": "PixelPerfect", "location": "Bandung", "tier": "Agency" },
+      "specifications": { "revisions": "Unlimited", "delivery": "7 Days", "tools": "Figma" },
+      "warranty": { "period": "Monthly", "type": "Satisfaction", "support": "Slack" }
+    },
+    "tags": ["Design", "UI/UX", "Creative"]
+  },
+  {
+    "id": 6,
+    "name": "Ergonomic Office Chair",
+    "category": "Gear",
+    "description": "Breathable mesh chair with lumbar support.",
+    "price": 2800000,
+    "image": "/Img/foto6.jpg",
+    "details": {
+      "provider": { "name": "Stramm", "location": "Tangerang", "tier": "Pro" },
+      "specifications": { "material": "High-Density Mesh", "weight_cap": "120kg", "adjust": "4D Armrest" },
+      "warranty": { "period": "2 Years", "type": "Sparepart", "support": "On-site" }
+    },
+    "tags": ["Furniture", "Workspace", "Health"]
+  },
+  {
+    "id": 7,
+    "name": "API Management Gateway",
+    "category": "Service",
+    "description": "Secure and monitor your API traffic easily.",
+    "price": 850000,
+    "image": "/Img/foto7.jpg",
+    "details": {
+      "provider": { "name": "Kong Inc", "location": "USA", "tier": "Enterprise" },
+      "specifications": { "requests": "1M/month", "nodes": "3 Nodes", "latency": "<10ms" },
+      "warranty": { "period": "1 Year", "type": "Uptime", "support": "Ticket 24/7" }
+    },
+    "tags": ["Backend", "DevOps", "API"]
+  },
+  {
+    "id": 8,
+    "name": "Thunderbolt 4 Dock",
+    "category": "Gear",
+    "description": "One cable solution for all your peripherals.",
+    "price": 4200000,
+    "image": "/Img/foto8.jpg",
+    "details": {
+      "provider": { "name": "CalDigit", "location": "USA", "tier": "Premium" },
+      "specifications": { "ports": "18 Ports", "power": "98W PD", "video": "Dual 4K" },
+      "warranty": { "period": "2 Years", "type": "Replacement", "support": "Web Chat" }
+    },
+    "tags": ["Hardware", "Accessories", "MacBook"]
+  },
+  {
+    "id": 9,
+    "name": "DevOps Consulting",
+    "category": "Service",
+    "description": "Transform your CI/CD pipeline and automation.",
+    "price": 12000000,
+    "image": "/Img/foto9.jpg",
+    "details": {
+      "provider": { "name": "CloudOps", "location": "Jakarta", "tier": "Consultancy" },
+      "specifications": { "stacks": "K8s, Terraform", "hours": "40/mo", "experts": "2 Senior" },
+      "warranty": { "period": "Project-based", "type": "Post-Support", "support": "Dedicated Slack" }
+    },
+    "tags": ["DevOps", "Cloud", "Automation"]
+  },
+  {
+    "id": 10,
+    "name": "Wireless Noise Cancelling Headphones",
+    "category": "Gear",
+    "description": "Focus on code without distraction.",
+    "price": 4500000,
+    "image": "/Img/foto10.jpg",
+    "details": {
+      "provider": { "name": "Sony", "location": "Japan", "tier": "Consumer" },
+      "specifications": { "model": "WH-1000XM5", "battery": "30h", "anc": "HD Noise Cancelling" },
+      "warranty": { "period": "1 Year", "type": "Official", "support": "Service Center" }
+    },
+    "tags": ["Audio", "Gadget", "Hardware"]
+  },
+  {
+    "id": 11,
+    "name": "Managed Database Service",
+    "category": "Service",
+    "description": "Scalable SQL and NoSQL databases managed for you.",
+    "price": 600000,
+    "image": "/Img/foto11.jpg",
+    "details": {
+      "provider": { "name": "MongoDB Atlas", "location": "Global", "tier": "Professional" },
+      "specifications": { "storage": "512GB", "backup": "Daily", "region": "Multi-region" },
+      "warranty": { "period": "Annual", "type": "Data Safety", "support": "Community/Pro" }
+    },
+    "tags": ["Database", "Backend", "Cloud"]
+  },
+  {
+    "id": 12,
+    "name": "Standing Desk Electric",
+    "category": "Gear",
+    "description": "Switch between sitting and standing easily.",
+    "price": 5500000,
+    "image": "/Img/foto12.jpg",
+    "details": {
+      "provider": { "name": "Oximus", "location": "China", "tier": "Mid-Range" },
+      "specifications": { "motors": "Dual Motor", "height": "60-125cm", "load": "100kg" },
+      "warranty": { "period": "5 Years", "type": "Motor Only", "support": "Home Service" }
+    },
+    "tags": ["Furniture", "Workspace", "Health"]
+  },
+  {
+    "id": 13,
+    "name": "Video Production Service",
+    "category": "Service",
+    "description": "Corporate or product explainer video editing.",
+    "price": 2500000,
+    "image": "/Img/foto13.jpg",
+    "details": {
+      "provider": { "name": "VFX Studio", "location": "Surabaya", "tier": "Agency" },
+      "specifications": { "resolution": "4K", "length": "2 mins", "bgm": "Licensed" },
+      "warranty": { "period": "7 Days", "type": "Revision", "support": "Email" }
+    },
+    "tags": ["Content", "Creative", "Marketing"]
+  },
+  {
+    "id": 14,
+    "name": "Webcam 4K Ultra HD",
+    "category": "Gear",
+    "description": "Professional look for virtual meetings.",
+    "price": 3200000,
+    "image": "/Img/foto14.jpg",
+    "details": {
+      "provider": { "name": "Logitech", "location": "Switzerland", "tier": "Premium" },
+      "specifications": { "fov": "90 Degrees", "mic": "Dual Stereo", "zoom": "5x Digital" },
+      "warranty": { "period": "1 Year", "type": "Limited Hardware", "support": "Global" }
+    },
+    "tags": ["Hardware", "Meeting", "Accessories"]
+  },
+  {
+    "id": 15,
+    "name": "Search Engine Optimization (SEO)",
+    "category": "Service",
+    "description": "Rank higher on Google search results.",
+    "price": 4000000,
+    "image": "/Img/foto15.jpg",
+    "details": {
+      "provider": { "name": "RankMaster", "location": "Jakarta", "tier": "Pro" },
+      "specifications": { "keywords": "10 tracked", "report": "Monthly", "strategy": "Whitehat" },
+      "warranty": { "period": "3 Months", "type": "Ranking Growth", "support": "Monthly Meeting" }
+    },
+    "tags": ["Marketing", "SEO", "Web"]
+  },
+  {
+    "id": 16,
+    "name": "External SSD 2TB",
+    "category": "Gear",
+    "description": "Lightning fast file transfer for creative pros.",
+    "price": 3800000,
+    "image": "/Img/foto16.jpg",
+    "details": {
+      "provider": { "name": "Samsung", "location": "Korea", "tier": "Pro" },
+      "specifications": { "speed": "2000MB/s", "interface": "USB-C 3.2", "drop": "2m Protection" },
+      "warranty": { "period": "5 Years", "type": "Limited", "support": "Drop-off" }
+    },
+    "tags": ["Storage", "Hardware", "MacBook"]
+  },
+  {
+    "id": 17,
+    "name": "IT Support On-Call",
+    "category": "Service",
+    "description": "Instant help for your office technical issues.",
+    "price": 500000,
+    "image": "/Img/foto17.jpg",
+    "details": {
+      "provider": { "name": "TechSquad", "location": "Local", "tier": "Essential" },
+      "specifications": { "response": "2 Hours", "visit": "1 Visit", "remote": "Included" },
+      "warranty": { "period": "24 Hours", "type": "Incident Fix", "support": "Phone" }
+    },
+    "tags": ["Service", "Maintenance", "Office"]
+  },
+  {
+    "id": 18,
+    "name": "Professional Microphone",
+    "category": "Gear",
+    "description": "Studio quality audio for podcast and streaming.",
+    "price": 2900000,
+    "image": "/Img/foto18.jpg",
+    "details": {
+      "provider": { "name": "Shure", "location": "USA", "tier": "Studio" },
+      "specifications": { "type": "Dynamic", "pattern": "Cardioid", "conn": "XLR/USB" },
+      "warranty": { "period": "2 Years", "type": "Official", "support": "Service Center" }
+    },
+    "tags": ["Audio", "Hardware", "Content"]
+  },
+  {
+    "id": 19,
+    "name": "Technical Writing",
+    "category": "Service",
+    "description": "Documentation for your software and APIs.",
+    "price": 1500000,
+    "image": "/Img/foto19.jpg",
+    "details": {
+      "provider": { "name": "WriteDev", "location": "Remote", "tier": "Freelance" },
+      "specifications": { "pages": "10 Pages", "format": "Markdown/HTML", "revisions": "2x" },
+      "warranty": { "period": "Fixed", "type": "Accuracy", "support": "Email" }
+    },
+    "tags": ["Content", "Documentation", "Software"]
+  },
+  {
+    "id": 20,
+    "name": "Wireless Mesh WiFi 6",
+    "category": "Gear",
+    "description": "Eliminate dead zones in your workspace.",
+    "price": 4800000,
+    "image": "/Img/foto20.jpg",
+    "details": {
+      "provider": { "name": "TP-Link Deco", "location": "China", "tier": "Consumer" },
+      "specifications": { "coverage": "500 sqm", "speed": "3000Mbps", "units": "3 Pack" },
+      "warranty": { "period": "1 Year", "type": "Replacement", "support": "App Chat" }
+    },
+    "tags": ["Networking", "Hardware", "Workspace"]
+  }
+]
