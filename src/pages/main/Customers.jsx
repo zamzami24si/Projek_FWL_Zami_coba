@@ -1,14 +1,10 @@
 import PageHeader from "../../components/PageHeader";
 
 export default function Customers() {
-  // Generate 30 Data JSON
   const customersData = Array.from({ length: 30 }).map((_, i) => ({
-    // Gunakan backtick (`) bukan kutip tunggal (')
     id: `CUS-2026${String(i + 1).padStart(3, '0')}`,
     name: ["dwi alfira", "zamzami", "darrel", "apo jo", "hahahah"][i % 5],
-    // Gunakan backtick (`) di sini juga
     email: `customer${i + 1}@example.com`,
-    // Dan di sini juga
     phone: `0812-7000-${String(100 + i)}`,
     loyalty: i % 3 === 0 ? "Gold" : i % 3 === 1 ? "Silver" : "Bronze",
   }));
@@ -16,33 +12,35 @@ export default function Customers() {
   return (
     <div>
       <PageHeader title="Customer List" breadcrumb="Customers">
-        <button className="bg-green-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-green-700 transition-all shadow-lg">
+        <button className="bg-[#4E342E] text-white px-6 py-2 rounded-xl font-bold hover:bg-[#3E2723] transition-all shadow-lg active:scale-95">
           + Add New Customer
         </button>
       </PageHeader>
 
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div className="bg-white rounded-2xl shadow-sm border border-stone-100 overflow-hidden">
         <table className="w-full text-left">
-          <thead className="bg-gray-50 border-b border-gray-100">
+          <thead className="bg-stone-50 border-b border-stone-100">
             <tr>
-              <th className="p-4 text-gray-400 font-medium">Customer ID</th>
-              <th className="p-4 text-gray-400 font-medium">Customer Name</th>
-              <th className="p-4 text-gray-400 font-medium">Email</th>
-              <th className="p-4 text-gray-400 font-medium">Phone</th>
-              <th className="p-4 text-gray-400 font-medium">Loyalty</th>
+              <th className="p-4 text-stone-400 font-medium">Customer ID</th>
+              <th className="p-4 text-stone-400 font-medium">Customer Name</th>
+              <th className="p-4 text-stone-400 font-medium">Email</th>
+              <th className="p-4 text-stone-400 font-medium">Phone</th>
+              <th className="p-4 text-stone-400 font-medium">Loyalty</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-50">
+          <tbody className="divide-y divide-stone-50">
             {customersData.map((item) => (
-              <tr key={item.id} className="hover:bg-green-50/30 transition-colors">
-                <td className="p-4 font-bold text-green-600">{item.id}</td>
-                <td className="p-4 font-semibold text-gray-700">{item.name}</td>
-                <td className="p-4 text-gray-500">{item.email}</td>
-                <td className="p-4 text-gray-500">{item.phone}</td>
+              <tr key={item.id} className="hover:bg-[#FCF8F5] transition-colors">
+                <td className="p-4 font-bold text-[#8B4513]">{item.id}</td>
+                <td className="p-4 font-semibold text-stone-700 capitalize">{item.name}</td>
+                <td className="p-4 text-stone-500">
+                  <a href={`mailto:${item.email}`} className="hover:underline">{item.email}</a>
+                </td>
+                <td className="p-4 text-stone-500">{item.phone}</td>
                 <td className="p-4">
                   <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                    item.loyalty === 'Gold' ? 'bg-yellow-100 text-yellow-600' : 
-                    item.loyalty === 'Silver' ? 'bg-slate-100 text-slate-600' : 'bg-orange-100 text-orange-600'
+                    item.loyalty === 'Gold' ? 'bg-amber-100 text-amber-700' : 
+                    item.loyalty === 'Silver' ? 'bg-stone-200 text-stone-700' : 'bg-orange-100 text-orange-700'
                   }`}>
                     {item.loyalty}
                   </span>
