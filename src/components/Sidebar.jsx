@@ -43,6 +43,10 @@ export default function Sidebar() {
             <FiBarChart2 className="text-lg" /> <span>Analytics</span>
           </NavLink>
 
+          <NavLink to="/fitur-xyz" className={menuClass}>
+            <FiBarChart2 className="text-lg" /> <span>FiturXYZ</span>
+          </NavLink>
+
           {/* MENU PRAKTIKUM: REUSABLE COMPONENTS */}
           <NavLink to="/components" className={menuClass}>
             <FiLayers className="text-lg" /> <span>Components</span>

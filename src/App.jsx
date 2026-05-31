@@ -11,6 +11,7 @@ const Orders = React.lazy(() => import("./pages/main/Orders"));
 const Inventory = React.lazy(() => import("./pages/main/Inventory"));
 const Analytics = React.lazy(() => import("./pages/main/Analytics"));
 const Settings = React.lazy(() => import("./pages/main/Settings"));
+const FiturXYZ = React.lazy(() => import("./pages/main/FiturXYZ"));
 
 // HALAMAN BARU UNTUK PRAKTIKUM COMPONENTS 👇
 const Components = React.lazy(() => import("./pages/main/Components"));
@@ -47,6 +48,7 @@ function App() {
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/fitur-xyz" element={<FiturXYZ />} />
 
           {/* RUTE HALAMAN COMPONENTS BARU DI SINI 👇 */}
           <Route path="/components" element={<Components />} />
