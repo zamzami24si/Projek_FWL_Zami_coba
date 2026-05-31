@@ -1,49 +1,90 @@
-import React from 'react';
-
-// Mengubah @/ menjadi jalur manual ../../ keluar folder
+import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "../../components/ui/card";
 import { Badge } from "../../components/ui/badge";
-import { 
-  Card, 
-  CardHeader, 
-  CardTitle, 
-  CardDescription, 
-  CardContent, 
-  CardFooter 
-} from "../../components/ui/card";
+
+// 🚀 PENERAPAN 3 KOMPONEN UI CRM BARU (Sesuai isi folder src/components Anda)
+import CoffeeInput from "../../components/CoffeeInput";
+import CoffeeSelect from "../../components/CoffeeSelect";
+import CoffeeAvatar from "../../components/CoffeeAvatar";
 
 export default function FiturXYZ() {
-  return (
-    <div className="p-6 flex flex-col items-start gap-6 min-h-screen text-slate-800">
-      <div>
-        <h1 className="text-3xl font-extrabold tracking-tight">Fitur XYZ</h1>
-        <p className="text-slate-500 mt-1">Halaman pengujian komponen UI baru.</p>
-      </div>
-      
-      {/* Tombol Klik Di Sini */}
-      <Button variant="default">Klik disini</Button>
+  // State CRM untuk mensimulasikan interaktivitas data pelanggan
+  const [customerName, setCustomerName] = useState("Zami");
+  const [crmStatus, setCrmStatus] = useState("Leads");
 
-      {/* Komponen Card Sesuai Gambar Modul */}
-      <Card className="w-[380px] shadow-sm border border-slate-200 bg-white rounded-xl overflow-hidden">
-        <CardHeader className="p-6 pb-4">
+  const handleSimpan = () => {
+    alert(`Data CRM Pelanggan "${customerName}" dengan status "${crmStatus}" berhasil disimpan!`);
+  };
+
+  const handleBatal = () => {
+    setCustomerName("");
+    setCrmStatus("Leads");
+  };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight text-stone-900">Sistem Manajemen CRM</h1>
+        <p className="text-stone-500">Kelola interaksi dan data prospek pelanggan Coffee & Bakery secara real-time.</p>
+      </div>
+
+      <Card className="max-w-xl border-stone-200 shadow-sm bg-white">
+        <CardHeader className="border-b border-stone-100 pb-4">
           <div className="flex items-center justify-between">
-            <CardTitle className="text-xl font-bold text-slate-900">Belajar shadcn/ui</CardTitle>
-            <Badge variant="secondary" className="font-semibold bg-slate-100 text-slate-800 px-2 py-0.5 rounded">Baru</Badge>
+            <div>
+              <CardTitle className="text-xl font-bold text-stone-800">Detail Profil Pelanggan</CardTitle>
+              <CardDescription>Perbarui data prospek penjualan CRM Anda di bawah ini.</CardDescription>
+            </div>
+            {/* 1. KOMPONEN UI CRM 1: AVATAR (Menampilkan Foto Profil Pelanggan) */}
+            <CoffeeAvatar name={customerName || "User"} className="h-12 w-12 border border-amber-600/20" />
           </div>
-          <CardDescription className="text-sm text-slate-500 mt-1">
-            Contoh penggunaan komponen shadcn/ui di React
-          </CardDescription>
         </CardHeader>
 
-        <CardContent className="p-6 pt-0 pb-4 text-slate-600">
-          <p className="text-sm">
-            Komponen ini dibuat di branch <strong>komponen-shadcnui</strong> lalu di-merge ke main.
-          </p>
+        <CardContent className="space-y-5 pt-6">
+          {/* 2. KOMPONEN UI CRM 2: INPUT FORM (Untuk mengisi nama pelanggan CRM) */}
+          <div className="space-y-2">
+            <label className="text-sm font-semibold text-stone-700">Nama Pelanggan / Perusahaan</label>
+            <CoffeeInput 
+              type="text" 
+              placeholder="Masukkan nama pelanggan..." 
+              value={customerName}
+              onChange={(e) => setCustomerName(e.target.value)}
+              className="w-full"
+            />
+          </div>
+
+          {/* 3. KOMPONEN UI CRM 3: SELECT / DROPDOWN (Untuk menentukan status pipeline CRM) */}
+          <div className="space-y-2">
+            <label className="text-sm font-semibold text-stone-700">Status Pipeline CRM</label>
+            <CoffeeSelect
+              value={crmStatus}
+              onChange={(e) => setCrmStatus(e.target.value)}
+              options={[
+                { value: "Leads", label: "Leads (Prospek Baru)" },
+                { value: "Contacted", label: "Contacted (Sudah Dihubungi)" },
+                { value: "Negotiation", label: "Negotiation (Negosiasi)" },
+                { value: "Deal", label: "Deal (Selesai/Membeli)" },
+              ]}
+              className="w-full"
+            />
+          </div>
+
+          <div className="pt-2">
+            <span className="text-xs font-medium text-stone-500 mr-2">Live Preview Status:</span>
+            <Badge variant={crmStatus === "Deal" ? "default" : "secondary"}>
+              {crmStatus}
+            </Badge>
+          </div>
         </CardContent>
 
-        <CardFooter className="p-6 pt-0 flex gap-2">
-          <Button size="sm" className="bg-slate-900 text-white hover:bg-slate-800 px-4 py-2 rounded-md text-sm font-medium">Simpan</Button>
-          <Button variant="outline" size="sm" className="border border-slate-300 hover:bg-slate-50 px-4 py-2 rounded-md text-sm font-medium">Batal</Button>
+        <CardFooter className="bg-stone-50/50 border-t border-stone-100 px-6 py-4 flex justify-end gap-3 rounded-b-xl">
+          <Button variant="outline" onClick={handleBatal} className="border-stone-200 text-stone-700 hover:bg-stone-100">
+            Batal
+          </Button>
+          <Button onClick={handleSimpan} className="bg-[#6F3414] hover:bg-[#59290f] text-white">
+            Simpan Perubahan
+          </Button>
         </CardFooter>
       </Card>
     </div>

@@ -4,14 +4,15 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 export default function MainLayout() {
   const location = useLocation();
 
-  // Daftar menu sidebar - Telah ditambahkan menu Components 👇
+ // Daftar menu sidebar - Tambahkan FiturXYZ di sini 👇
   const menuItems = [
     { path: "/", name: "Dashboard", icon: <FiGrid /> },
     { path: "/products", name: "Products", icon: <FiCoffee /> },
     { path: "/orders", name: "Orders", icon: <FiShoppingBag /> },
     { path: "/inventory", name: "Inventory", icon: <FiLayers /> },
     { path: "/analytics", name: "Analytics", icon: <FiBarChart2 /> },
-    { path: "/components", name: "Components", icon: <FiCpu /> }, // <- Menu baru Anda
+    { path: "/fitur-xyz", name: "FiturXYZ", icon: <FiLayers /> }, // 
+    { path: "/components", name: "Components", icon: <FiCpu /> },
   ];
 
   return (
