@@ -11,7 +11,7 @@ export default function MainLayout() {
     { path: "/orders", name: "Orders", icon: <FiShoppingBag /> },
     { path: "/inventory", name: "Inventory", icon: <FiLayers /> },
     { path: "/analytics", name: "Analytics", icon: <FiBarChart2 /> },
-    { path: "/fitur-xyz", name: "FiturXYZ", icon: <FiLayers /> }, // 
+    { path: "/fitur-xyz", name: "FiturXYZ", icon: <FiLayers /> }, 
     { path: "/components", name: "Components", icon: <FiCpu /> },
   ];
 

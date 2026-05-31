@@ -2,7 +2,6 @@ import * as React from "react"
 import { cva } from "class-variance-authority";
 import { Slot } from "radix-ui"
 
-// SEKARANG BENAR-BENAR DIUBAH: Keluar 2 tingkat folder ke src/lib/utils
 import { cn } from "../../lib/utils"
 
 const buttonVariants = cva(

@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "../../components/ui/card";
 import { Badge } from "../../components/ui/badge";
-
-// 🚀 PENERAPAN 3 KOMPONEN UI CRM BARU (Sesuai isi folder src/components Anda)
 import CoffeeInput from "../../components/CoffeeInput";
 import CoffeeSelect from "../../components/CoffeeSelect";
 import CoffeeAvatar from "../../components/CoffeeAvatar";
 
 export default function FiturXYZ() {
-  // State CRM untuk mensimulasikan interaktivitas data pelanggan
   const [customerName, setCustomerName] = useState("Zami");
   const [crmStatus, setCrmStatus] = useState("Leads");
 
@@ -36,13 +33,13 @@ export default function FiturXYZ() {
               <CardTitle className="text-xl font-bold text-stone-800">Detail Profil Pelanggan</CardTitle>
               <CardDescription>Perbarui data prospek penjualan CRM Anda di bawah ini.</CardDescription>
             </div>
-            {/* 1. KOMPONEN UI CRM 1: AVATAR (Menampilkan Foto Profil Pelanggan) */}
+            {/* 1. KOMPONEN UI CRM 1: AVATAR */}
             <CoffeeAvatar name={customerName || "User"} className="h-12 w-12 border border-amber-600/20" />
           </div>
         </CardHeader>
 
         <CardContent className="space-y-5 pt-6">
-          {/* 2. KOMPONEN UI CRM 2: INPUT FORM (Untuk mengisi nama pelanggan CRM) */}
+          {/* 2. KOMPONEN UI CRM 2: INPUT FORM */}
           <div className="space-y-2">
             <label className="text-sm font-semibold text-stone-700">Nama Pelanggan / Perusahaan</label>
             <CoffeeInput 
@@ -54,17 +51,17 @@ export default function FiturXYZ() {
             />
           </div>
 
-          {/* 3. KOMPONEN UI CRM 3: SELECT / DROPDOWN (Untuk menentukan status pipeline CRM) */}
+          {/* 3. KOMPONEN UI CRM 3: SELECT / DROPDOWN (Telah Diperbaiki Menjadi Array String) */}
           <div className="space-y-2">
             <label className="text-sm font-semibold text-stone-700">Status Pipeline CRM</label>
             <CoffeeSelect
               value={crmStatus}
               onChange={(e) => setCrmStatus(e.target.value)}
               options={[
-                { value: "Leads", label: "Leads (Prospek Baru)" },
-                { value: "Contacted", label: "Contacted (Sudah Dihubungi)" },
-                { value: "Negotiation", label: "Negotiation (Negosiasi)" },
-                { value: "Deal", label: "Deal (Selesai/Membeli)" },
+                "Leads",
+                "Contacted",
+                "Negotiation",
+                "Deal"
               ]}
               className="w-full"
             />
